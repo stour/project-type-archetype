@@ -32,6 +32,6 @@ public class ${classPrefix}Extension {
     @Inject
     public ${classPrefix}Extension(${classPrefix}Resources resources, IconRegistry iconRegistry) {
         iconRegistry.registerIcon(new Icon(${classPrefix}_PROJECT_TYPE_CATEGORY + ".samples.category.icon",
-                resources.myProjectTypeIcon()));
+                resources.${classPrefix}ProjectTypeIcon()));
     }
 }
