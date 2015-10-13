@@ -89,7 +89,7 @@
             <plugin>
                 <groupId>org.eclipse.che.core</groupId>
                 <artifactId>che-maven-plugin</artifactId>
-                <version>${project.version}</version>
+                <version>3.13.1-SNAPSHOT</version>
                 <extensions>true</extensions>
             </plugin>
         </plugins>
