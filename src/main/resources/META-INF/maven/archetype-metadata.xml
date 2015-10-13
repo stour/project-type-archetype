@@ -26,7 +26,7 @@
         <fileSet encoding="UTF-8">
             <directory>src/main/che/machines</directory>
             <includes>
-                <include>Dockerfile</include>
+                <include>**/Dockerfile</include>
             </includes>
         </fileSet>
         <fileSet encoding="UTF-8">
