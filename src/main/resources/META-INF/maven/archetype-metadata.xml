@@ -37,7 +37,6 @@
             <directory></directory>
             <includes>
                 <include>.gitignore</include>
-                <include>README.md</include>
             </includes>
         </fileSet>
     </fileSets>
