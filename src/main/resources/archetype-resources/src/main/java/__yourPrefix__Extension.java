@@ -20,18 +20,15 @@ import org.eclipse.che.ide.api.icon.IconRegistry;
 import com.google.inject.Inject;
 import com.google.inject.Singleton;
 
-@Singleton
-@Extension(title = "${classPrefix} Project Type Extension", version = "1.0.0")
-public class ${classPrefix}Extension {
+import static ${package}.${yourPrefix}Attributes.${yourPrefix}_PROJECT_TYPE_CATEGORY;
 
-    public final static String ${classPrefix}_PROJECT_TYPE_ID = "${classPrefix}ProjectType";
-    public final static String ${classPrefix}_PROJECT_TYPE_NAME = "${classPrefix} Project Type Name";
-    public final static String ${classPrefix}_PROJECT_TYPE_CATEGORY = "${classPrefix} Project Type Category";
-    public final static String PROGRAMMING_LANGUAGE = "java";
+@Singleton
+@Extension(title = "${yourPrefix} Project Type Extension", version = "1.0.0")
+public class ${yourPrefix}Extension {
 
     @Inject
-    public ${classPrefix}Extension(${classPrefix}Resources resources, IconRegistry iconRegistry) {
-        iconRegistry.registerIcon(new Icon(${classPrefix}_PROJECT_TYPE_CATEGORY + ".samples.category.icon",
-                resources.${classPrefix}ProjectTypeIcon()));
+    public ${yourPrefix}Extension(${yourPrefix}Resources resources, IconRegistry iconRegistry) {
+        iconRegistry.registerIcon(new Icon(${yourPrefix}_PROJECT_TYPE_CATEGORY + ".samples.category.icon",
+                resources.${yourPrefix}ProjectTypeIcon()));
     }
 }

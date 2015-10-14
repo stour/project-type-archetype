@@ -25,28 +25,28 @@ import org.eclipse.che.ide.api.wizard.WizardPage;
 import com.google.inject.Inject;
 import com.google.inject.Provider;
 
-import static ${package}.${classPrefix}Extension.${classPrefix}_PROJECT_TYPE_CATEGORY;
-import static ${package}.${classPrefix}Extension.${classPrefix}_PROJECT_TYPE_ID;
+import static ${package}.${yourPrefix}Attributes.${yourPrefix}_PROJECT_TYPE_CATEGORY;
+import static ${package}.${yourPrefix}Attributes.${yourPrefix}_PROJECT_TYPE_ID;
 
 /**
  * Provides information for registering sample project type into project wizard.
  */
-public class ${classPrefix}Wizard implements ProjectWizardRegistrar {
+public class ${yourPrefix}Wizard implements ProjectWizardRegistrar {
     private final List<Provider<? extends WizardPage<ImportProject>>> wizardPages;
 
     @Inject
-    public ${classPrefix}Wizard() {
+    public ${yourPrefix}Wizard() {
         wizardPages = new ArrayList<>();
     }
 
     @NotNull
     public String getProjectTypeId() {
-        return ${classPrefix}_PROJECT_TYPE_ID;
+        return ${yourPrefix}_PROJECT_TYPE_ID;
     }
 
     @NotNull
     public String getCategory() {
-        return ${classPrefix}_PROJECT_TYPE_CATEGORY;
+        return ${yourPrefix}_PROJECT_TYPE_CATEGORY;
     }
 
     @NotNull

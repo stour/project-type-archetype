@@ -18,16 +18,15 @@ import org.eclipse.che.ide.Constants;
 
 import com.google.inject.Singleton;
 
+import static ${package}.${yourPrefix}Attributes.${yourPrefix}_PROJECT_TYPE_ID;
+import static ${package}.${yourPrefix}Attributes.${yourPrefix}_PROJECT_TYPE_NAME;
+import static ${package}.${yourPrefix}Attributes.PROGRAMMING_LANGUAGE;
+
 @Singleton
-public class ${classPrefix}ProjectType extends ProjectType {
+public class ${yourPrefix}ProjectType extends ProjectType {
 
-    public final static String ${classPrefix}_PROJECT_TYPE_ID = "${classPrefix}ProjectType";
-    public final static String ${classPrefix}_PROJECT_TYPE_NAME = "${classPrefix} Project Type Name";
-    public final static String ${classPrefix}_PROJECT_TYPE_CATEGORY = "${classPrefix} Project Type Category";
-    public final static String PROGRAMMING_LANGUAGE = "java";
-
-    public ${classPrefix}ProjectType() {
-        super(${classPrefix}_PROJECT_TYPE_ID, ${classPrefix}_PROJECT_TYPE_NAME, true, false);
+    public ${yourPrefix}ProjectType() {
+        super(${yourPrefix}_PROJECT_TYPE_ID, ${yourPrefix}_PROJECT_TYPE_NAME, true, false);
         addConstantDefinition(Constants.LANGUAGE, "language", PROGRAMMING_LANGUAGE);
     }
 }

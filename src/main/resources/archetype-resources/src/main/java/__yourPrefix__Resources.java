@@ -13,20 +13,11 @@
  *******************************************************************************/
 package ${package};
 
-import org.eclipse.che.api.project.server.type.ProjectType;
-import org.eclipse.che.inject.DynaModule;
+import com.google.gwt.resources.client.ClientBundle;
+import org.vectomatic.dom.svg.ui.SVGResource;
 
-import com.google.inject.AbstractModule;
-import com.google.inject.multibindings.Multibinder;
+public interface ${yourPrefix}Resources extends ClientBundle {
 
-@DynaModule
-public class ${classPrefix}Module extends AbstractModule {
-    /**
-     * {@inheritDoc}
-     */
-    @Override
-    protected void configure() {
-        Multibinder<ProjectType> projectTypeMultibinder = Multibinder.newSetBinder(binder(), ProjectType.class);
-        projectTypeMultibinder.addBinding().to(${classPrefix}ProjectType.class);
-    }
+    @Source("${package}/${yourPrefix}Extension.svg")
+    SVGResource ${yourPrefix}ProjectTypeIcon();
 }

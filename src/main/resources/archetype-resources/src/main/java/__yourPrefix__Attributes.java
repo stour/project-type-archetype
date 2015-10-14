@@ -1,6 +1,3 @@
-#set( $symbol_pound = '#' )
-#set( $symbol_dollar = '$' )
-#set( $symbol_escape = '\' )
 /*******************************************************************************
  * Copyright (c) 2012-2015 Codenvy, S.A.
  * All rights reserved. This program and the accompanying materials
@@ -13,11 +10,9 @@
  *******************************************************************************/
 package ${package};
 
-import com.google.gwt.resources.client.ClientBundle;
-import org.vectomatic.dom.svg.ui.SVGResource;
-
-public interface ${classPrefix}Resources extends ClientBundle {
-
-    @Source("${package}/${classPrefix}Extension.svg")
-    SVGResource ${classPrefix}ProjectTypeIcon();
+public interface ${yourPrefix}Attributes {
+    String ${yourPrefix}_PROJECT_TYPE_ID = "${yourPrefix}projecttype";
+    String ${yourPrefix}_PROJECT_TYPE_NAME = "${yourPrefix} Project Type Name";
+    String ${yourPrefix}_PROJECT_TYPE_CATEGORY = "${yourPrefix} Project Type Category";
+    String PROGRAMMING_LANGUAGE = "java";
 }
